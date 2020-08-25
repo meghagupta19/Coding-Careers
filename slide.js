@@ -1,35 +1,35 @@
 const slidePics = [
     {
-        img: "slide/download (6).jpg",
+        img: "https://tse1.mm.bing.net/th?id=OIP._yp4UH6mk2AVSH4-gSWUHAHaLH&pid=Api&P=0&w=300&h=300",
     },
     {
-        img:  "slide/images (4).jpg",
+        img:  "https://tse2.mm.bing.net/th?id=OIP.KUQigQf4sNF8hNQYKdf11wHaC2&pid=Api&P=0&w=414&h=160",
                   
     },
     {       
-        img: "slide/images (2).jpg",
+        img: "https://tse4.mm.bing.net/th?id=OIP.tD64X-hEf4Xq_vvU7vGL3AHaD_&pid=Api&P=0&w=349&h=189",
     
     },
     {
-        img:  "slide/images (14).jpg",
+        img:  "https://tse2.mm.bing.net/th?id=OIP.GdX1FQj0_onbsruvzysHMAHaEB&pid=Api&P=0&w=277&h=151",
              
     },
     {
 
-        img:  "slide/images (16).jpg",                 
+        img:  "https://tse4.mm.bing.net/th?id=OIP.U9THaRdIPtdWjpAPrql8lQHaEK&pid=Api&P=0&w=282&h=159",                 
     },
     {
-        img:  "slide/images (17).jpg", 
+        img:  "https://tse4.mm.bing.net/th?id=OIP.6pHL97WqeqGoy2XHkXLHYwHaEK&pid=Api&P=0&w=335&h=189", 
     },
     {
-        img:  "slide/images (25).jpg", 
+        img:  "https://tse4.mm.bing.net/th?id=OIP.EL_izz5EjDRLIkwG5QlMKQHaEk&pid=Api&P=0&w=251&h=156", 
     },
     
     {
-        img:  "slide/images (33).jpg", 
+        img:  "https://tse2.mm.bing.net/th?id=OIP.Q-aZJWfSbQxa8320VOCIbAHaDt&pid=Api&P=0&w=347&h=174", 
     },
     {
-        img:  "slide/maxresdefault.jpg", 
+        img:  "https://tse1.mm.bing.net/th?id=OIP.AbjtiBJ7_DCEr8VPJ7KIcwHaEK&pid=Api&P=0&w=295&h=167", 
     }
 
 ];

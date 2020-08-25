@@ -1,0 +1,258 @@
+button#login-buttons , button.ghost{
+    font-weight: 500;
+    border-radius: 30%;
+    padding: 12px 45px;
+    margin: 10px 0 10px;
+    font-size: 15px;
+    align-items: center;
+    background-color:crimson;
+    color: white;
+    transition: transform 80ms ease-in;
+    letter-spacing: 1px;
+}
+
+button#login-buttons:active , button.ghost:active{
+    transform: scale(0.95);
+}
+
+button#login-buttons:focus , button.ghost:focus{
+    outline: none;
+
+}
+
+button.ghost{
+    background: transparent;
+    margin-left: 40px;
+}
+
+
+.form-sign-up-container,.form-sign-in-container{
+   
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    background-color: wheat;
+}
+
+.form-sign-in-container{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.form-sign-up-container{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.overlay-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+.overlay{
+    background: crimson;
+    background: linear-gradient(to right, #ff4b2b, crimson) no-repeat 0 0 / cover;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+}
+
+.overlay-panel{
+    padding: 0 40px ;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+ 
+}
+
+
+
+.overlay-right{
+    right: 0;
+    width: 40%;
+    transform: translateX(0);
+}
+
+.overlay-left{
+    width: 40%;
+    transform: translateX(-20%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    border-radius: 10px;
+    box-shadow: 0 14px 28px 0 rgb(0, 0, 0,0.5);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+
+.login{
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 50px;
+    height: 100vh;
+    top: 0;
+    left: 20%;
+    position: absolute;
+    display: none;
+    transition: transform 0.6s ease;
+    transform: translateX(0);
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    
+}
+
+.popup{
+    margin: 0;
+
+}
+
+.forgot-password{
+    margin: 15px 0;
+    font-size: 14px;
+    text-decoration: none;
+    color:blue;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 10px 30px 10px;   
+}
+
+span{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.social-container{
+    margin: 20px 0;
+}
+
+.social-container a{
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+   
+}
+
+input{
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media(max-width:958px){
+    .login{
+        left: 0;
+    }
+}
+
+@media(max-width:768px){
+
+    .login{
+
+        margin-left: 0;
+        overflow: hidden;
+        
+    }
+
+}
+
+#blur.active{
+    filter : blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#login.active{
+     
+    filter: blur(0);
+}
+
+
+/* animtion */
+
+
+/* moving sign in to right */
+
+.container.right-panel-active  .form-sign-in-container{
+    
+    
+    transform: translateX(-50%);
+}
+
+/* moving overaly right panel to left */
+.container.right-panel-active .overlay-container{
+    transform: translateX(-100%);
+}
+
+/* moving sign-up over sign-in */
+
+.container.right-panel-active .form-sign-up-container{
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* interchanging overlay panels */
+
+.container.right-panel-active .overlay-left{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.container.right-panel-active .overlay-right{
+    
+    opacity: 0;
+}
+
+.container.right-panel-active .overlay{
+    transform: translateX(50%);
+}

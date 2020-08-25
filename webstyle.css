@@ -1,0 +1,292 @@
+body{
+    height: 100%;
+    text-align: center;
+    justify-content: center;   
+    line-height: 1.8em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    color: white;
+    
+}
+
+span{
+
+    color: red;
+}
+
+li#header-list{
+    list-style-type: none;
+    float: left;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size:16px;
+
+}
+
+
+.header-list{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+#check, label #bar{
+    display: none;
+}
+.header-list:hover{
+    color: wheat;
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 lightgreen;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+li#Pricing, li#Pricing-buttons {
+    list-style: none;
+    border: transparent 20px ;
+    background-color: white;
+    text-align: center;
+    padding : 5px;
+    font-size: 14px;
+}
+.pricing-container{
+
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 2em;
+    
+}
+h2{
+    text-align: center;
+}
+
+.simple{
+    background-color: black;
+    color: white;
+  
+}
+
+
+
+.box-2:hover{
+    box-shadow: 0 15px 15px 0 #000;
+}
+button.subscription-sign{
+    background-color: green;
+    color: white;
+    font-weight: 500;
+    border-radius: 30%;
+    padding: 12px 45px;
+    margin: 10px 0 10px;
+    font-size: 15px;
+    align-items: center;
+    transition: transform 80ms ease-in;
+    letter-spacing: 1px;
+}
+li#Pricing:hover{
+    background-color: lightgray;
+    font-weight: 600;
+    
+}
+.special , .simple{
+    list-style: none;
+    text-align: center;
+    border: transparent 20px ;
+    text-align: center;
+    padding : 10px;
+    font-weight: 500;
+}
+.simple:hover , .special:hover{
+    
+    font-weight: 600;
+}
+.special:hover{
+    background-color: none;
+}
+.special{
+    background-color: green;
+    font-weight: bold;
+}
+
+footer{
+    background-color:white;
+    padding: 10px 0px;
+    box-shadow: 0 20px 40px 0 lightgrey ;
+    margin: 20px 30px;
+    
+}
+
+
+
+
+.presentation{
+    
+    height: 500px;
+    overflow: hidden;
+    
+}
+
+#previous{
+    position: absolute;
+    left: 5px;
+    top: 300px ;
+}
+#next{
+    position: absolute;
+    right: 5px;
+    top: 300px ;
+}
+
+.img-container{
+    padding: 0 500px;
+    margin : 30px;
+    align-content: center;
+    justify-content: center;
+}
+img #person-1{
+
+    width: 100%;
+    max-height: 200px;
+     max-width: 100%;
+    height: auto;
+    
+}
+
+.details{
+    padding: 0px 30px;
+    margin-top: 0px ;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 30px;
+}
+
+.design{
+    box-shadow: 0px 20px 20px 0px grey;
+}
+
+@media(max-width:568px){
+        
+   #check:checked ~ label > ul.header-ul > li#header-list> a:hover{
+    padding-right: 30px;
+    padding-left: 0px;
+      
+   } 
+   .pricing-container{
+
+    justify-content: center;
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   
+   .img-container{
+    padding: 0;
+    margin: 0;
+}
+   
+}
+
+@media(max-width:768px){
+    
+    .pricing-container{
+        display: grid;
+   
+        grid-gap: 2em;
+        grid-template-columns: 30% 30% 30%;
+    }
+     
+    .img-container{
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    ul.header-ul{
+       
+        visibility: hidden;
+        position: fixed;
+
+    }
+
+    h1#heading{
+        display: grid;
+        grid-column: 2;        
+    }
+    
+    li#header-list a:hover{
+         
+        box-shadow: 0 15px 15px 0 lightgreen;   
+        display: flex;        
+    }
+    
+    label #bar{
+        display: block;
+        cursor:pointer;
+        position: absolute;
+        border-radius: 3px;
+        background-color: transparent;
+        color: white;
+        padding: 6px 12px;
+        top: 20px;
+        left: 20px;
+        font-size: 30px;
+        
+    }
+       
+    #check:checked ~ label > ul.header-ul{
+       
+       visibility: visible;
+       transform: translateX(20%);
+       display: flex;
+       flex-direction: column;
+       position: static;
+        
+       max-height: 350px;
+       line-height: 30px;
+       font-size: 50px;
+       left: 30px;
+       padding-left: 100px;
+       background-color: transparent; 
+       transition: all 2s ease; 
+       
+   }
+   
+   #check:checked ~ label > ul.header-ul > li#header-list> a:hover{
+    padding-left: 70px;
+      
+   } 
+   
+   #check:checked ~ li#header-list{
+       display: flex;
+       flex-direction: row;
+       border-bottom: 1px solid lightgray;
+   }
+
+
+   
+   
+}
+
+@media(max-width:681px){
+    .pricing-container{
+        display: block;
+        margin: 20px 30px ;
+        
+    }
+
+    
+    img #person-1{
+        width: auto;
+    }
+}

@@ -1,4 +1,4 @@
-# Different fields in programming:
+# Brief Discription regarding different fields in programming:
 
 1.Web Development
 
@@ -9,11 +9,5 @@
 4.Machine Learning
 
 5.IOT
-
-6.Data Science
-
-7.Flutter Development
-
-8.Version Control
 
 And many more....

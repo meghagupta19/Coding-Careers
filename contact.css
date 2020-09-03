@@ -231,7 +231,7 @@ section{
 }
 
 .form-container{
-    background-color: rgb(247, 243, 242);
+    background: url(https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center / cover;
     border-radius: 10px;
     width: 600px;
     max-width: 100%;
@@ -255,9 +255,9 @@ section{
     position: relative;
 }
 
-.form-control label{
+label{
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 input{
@@ -309,13 +309,25 @@ i .form-icon{
     visibility: visible;
 }
 
-
-
-button .form-button{
-    margin: 30px 0px;
-    padding: 20px;
-    background-color: crimson;
-    border-radius: 30px;
+.form-button{
+    margin: 10px 0px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
     align-items: center;
     font-family: cursive;
 }
+
+.form-button:hover{
+    font-size: 20px;
+}
+
+textarea{
+    height: 100px;
+    border-radius: 10px;
+    font-family: cursive;
+    width: 400px;
+    padding: 10px;
+    display: block;
+}
+

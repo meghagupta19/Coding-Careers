@@ -46,8 +46,6 @@ li{
     border-radius: 10px;
 }
 
-
-
 @media(max-width:568px){
         
    #check:checked ~ label > ul > li> a:hover{
@@ -88,9 +86,7 @@ li{
     }
 
     p{
-
-        line-height: 1em;
-        
+        line-height: 1em;        
     }
     img{
         height: 50px;
@@ -120,13 +116,9 @@ li{
     
 }
 
-
 @media(max-width:768px){
     
-    
-
-    ul{
-       
+    ul{       
         visibility: hidden;
         position: fixed;
 
@@ -137,8 +129,7 @@ li{
         grid-column: 2;        
     }
     
-    li a:hover{
-         
+    li a:hover{         
         box-shadow: 0 15px 15px 0 lightgreen;   
         display: flex;        
     }
@@ -157,22 +148,19 @@ li{
         
     }
        
-    #check:checked ~ label > ul{
-       
+    #check:checked ~ label > ul{       
        visibility: visible;
        transform: translateX(20%);
        display: flex;
        flex-direction: column;
-       position: static;
-        
+       position: static;        
        max-height: 350px;
        line-height: 30px;
        font-size: 50px;
        left: 30px;
        padding-left: 100px;
        background-color: transparent; 
-       transition: all 2s ease; 
-       
+       transition: all 2s ease;    
    }
    
    #check:checked ~ label > ul > li> a:hover{
@@ -184,10 +172,7 @@ li{
        display: flex;
        flex-direction: row;
        border-bottom: 1px solid lightgray;
-   }
-
-
-   
+   }   
    
 }
 
@@ -216,7 +201,6 @@ section{
     text-decoration: underline;
 }
 
-
 .form-body{
 
     box-sizing: border-box;
@@ -243,6 +227,15 @@ section{
     padding: 20px 30px;
 
 }
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 .form{
 
@@ -261,13 +254,15 @@ label{
 }
 
 input{
-    border: 5px solid #f0f0f0;
-    border-radius: 20x;
+    border: none;
+    border-radius: 10px;
     display: block;
     padding: 10px;
     font-size: 10px;
     font-family: cursive;
-    width: 400px;
+    width: 200px;
+    padding: 12px 15px;
+    margin:0;
 }
 
 .form-control.success input{
@@ -278,7 +273,6 @@ input{
     border-color: #e74c3c;
 }
 
-
 small{
     visibility: hidden;
     position: absolute;
@@ -287,11 +281,11 @@ small{
 }
 
 .form-control.error small{
-    color: #e74c3c;
+    color: red;
     visibility: visible;
 }
 
-i .form-icon{
+i#form-icon{
     position: absolute;
     top: 40px;
     right: 5px;
@@ -316,6 +310,7 @@ i .form-icon{
     border-radius: 10px;
     align-items: center;
     font-family: cursive;
+    border: none;
 }
 
 .form-button:hover{
@@ -330,4 +325,3 @@ textarea{
     padding: 10px;
     display: block;
 }
-

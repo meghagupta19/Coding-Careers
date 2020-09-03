@@ -10,24 +10,38 @@ container.classList.remove('right-panel-active'));
 
 // filling in form 
 
-const name = document.getElementById('name');
-const email= document.getElementById('email');
+const names = document.getElementById('name');
+const mail= document.getElementById('email');
 const password = document.getElementById('password');
 const form = document.getElementById('form');
 
 
 form.addEventListener('submit',(e)=>{
-
-    if(name.value === ''|| password.value === '' || email.value ===''){
-        sweetAlert("Oops...", "All fields are required", "error");
+    
+   
+    if(password.value.length<8 && password.value.length>1){
+        alert('Oops!! Password must be longer than 8 characters');
     }
-    if(password.value.length<8 && password.value.length>1 ){
-        sweetAlert("Oops...", "Password must be longer than 8 characters", "error");
+    if(names.value === ''|| password.value === '' || mail.value ===''){
+        alert("Oops!! All fields are required");
     }
-    if((name.value !== '') && (password.value !== '') && (email.value !=='') && (password.value.length>8))
+    
+    if((names.value !== '') && (password.value !== '') && (mail.value !=='') && (password.value.length>8))
         swal("Congrats", "You succeed to login", "success");
+
+    if(!isEmail(emailValue))
+    {
+        alert('invalid email id');
+    }
+    
    
 })
+
+
+function isEmail(mail){
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(mail).toLowerCase());
+}
 
 // popup form
 

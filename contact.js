@@ -1,9 +1,8 @@
 const form=document.getElementById('form');
 const name=document.getElementById('username');
 const email=document.getElementById('email');
-
 const contact=document.getElementById('phone-no');
-const address=document.getElementById('address');
+
 
 
 form.addEventListener("click",(e)=>{
@@ -17,7 +16,7 @@ function checkInput(){
     const nameValue=name.value.trim();
     const emailValue=email.value.trim();
     const contactValue=contact.value.trim();
-    const addressValue=address.value.trim();
+   
       
    
 
@@ -50,14 +49,7 @@ function checkInput(){
         
         setSuccess(contact);
     }
-    if(addressValue===''){
-        
-        setError(address,'address is required');
-    }
-    else{
-        
-        setSuccess(address);
-    }
+   
 
 
 }

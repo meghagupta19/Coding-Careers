@@ -18,6 +18,28 @@ const form = document.getElementById('form');
 
 form.addEventListener('submit',(e)=>{
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
    
     if(password.value.length<8 && password.value.length>1){
         alert('Oops!! Password must be longer than 8 characters');
